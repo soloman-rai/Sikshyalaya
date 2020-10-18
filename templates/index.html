@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  {% load static %}
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">Sikshyalaya</h1>
+      <h3 class="mb-5">
+        <em>A New Stop for all the <u> Learners </u> Out There!</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- About -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>Sikshayalaya is the best place to learn something new.</h2>
+          <p class="lead mb-5">We offer top-level courses for every field there is.  
+            <a href="">What about teaching staff ?</a>!</p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="content-section bg-primary text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Services</h3>
+        <h2 class="mb-5">What We Offer</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-screen-smartphone"></i>
+          </span>
+          <h4>
+            <strong>Instant Access</strong>
+          </h4>
+          <p class="text-faded mb-0">Get started with a course with just few clicks.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-pencil"></i>
+          </span>
+          <h4>
+            <strong>Immersive Learning</strong>
+          </h4>
+          <p class="text-faded mb-0"> Courses are designed to offer an immersive learning experience.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-like"></i>
+          </span>
+          <h4>
+            <strong>Favorited</strong>
+          </h4>
+          <p class="text-faded mb-0"> Best suited for independent learners
+            <i class="fas fa-heart"></i> <br>
+            Start Learning Right Away!</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-mustache"></i>
+          </span>
+          <h4>
+            <strong>Professional Staff</strong>
+          </h4>
+          <p class="text-faded mb-0">We make sure the courses are project based and up to date.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Callout -->
+  <section class="callout">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5"> <u>Sign up</u> for your
+        <em>first course!</em></h2>
+      <a class="btn btn-primary btn-xl" href="">Create Account</a>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Preview</h3>
+        <h2 class="mb-5">Top Courses</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Stationary</div>
+                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'index/img/portfolio-1.jpg' %}" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Ice Cream</div>
+                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'index/img/portfolio-2.jpg' %}" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Strawberries</div>
+                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'index/img/portfolio-3.jpg' %}" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Workspace</div>
+                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'index/img/portfolio-4.jpg' %}" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="content-section bg-primary text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">I am a teacher! How do i get started ?</h2>
+      <a href="#!" class="btn btn-xl btn-light mr-4">Sign Up</a>
+      <a href="#!" class="btn btn-xl btn-dark">Know More</a>
+    </div>
+  </section>
+
+  {%endblock %}
+
